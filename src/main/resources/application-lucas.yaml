@@ -1,0 +1,24 @@
+# DEFINICAO LOG DA APLICACAO
+logging:
+   level:
+      br.com.lucas.projeto.teste: ERROR
+      org.springframework: INFO
+            
+# DEFINICAO BANCO DE DADOS      
+spring:
+    jpa:
+        database: POSTGRESQL
+        show-sql: true
+        hibernate:
+            ddl-auto: update
+        properties:
+            hibernate:
+                temp:
+                    use_jdbc_metadata_defaults: false
+    datasource:
+        platform: postgres
+        driverClassName: org.postgresql.Driver
+        url: jdbc:postgresql://localhost:5432/teste
+        username: postgres
+        password: 14062000
+          

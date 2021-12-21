@@ -1,0 +1,11 @@
+# DEFINICAO LOG DA APLICACAO
+info:
+  app:
+    name: Projeto Teste
+
+spring:
+   application:
+      name: projeto.teste
+
+   profiles:
+      active: default, dev
