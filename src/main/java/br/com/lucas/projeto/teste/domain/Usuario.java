@@ -33,12 +33,12 @@ public @Data class Usuario implements Serializable{
 	private String nome;
 	
 	@Column
-	@Email(message = "email invalido")
+	@Email(message = "Email inválido")
 	@NotBlank(message = "Campo não informado")
 	private String email;
 	
 	@Column(length = 14)
-	@CPF(message = "cpf invalido")
+	@CPF(message = "CPF inválido")
 	@NotBlank(message = "Campo não informado")
 	private String cpf;
 	
